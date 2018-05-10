@@ -13,6 +13,18 @@ int main(float argc, char *argv[])
     float matriz[4][5];
     float sx[3];
 
+    cout << "Qual o primeiro conjunto de solucoes (4 numeros ) : " << endl;
+    for(int i=0;i<4;i++)
+    {
+        cin >> sx[i];
+    }
+    cout << "imprimindo vetor solucao : " << endl;
+    for(int i=0; i<4;i++)
+    {
+            cout << "Sx = ";
+            cout << sx[i] << endl;
+    }
+
     cout << "Quem eh o elemento a11,a12,a13,a14,b1 : " << endl;
     for(int i=0;i<5;i++)
     {
