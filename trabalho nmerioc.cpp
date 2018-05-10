@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     int NITMAX = 1000;
-    double matriz[4][5];
-    double sx[1000][3];
+    float matriz[4][5];
+    float sx[1000][3];
 
     cout << "Qual o primeiro conjunto de solucoes (4 numeros ) : " << endl;
     for(int i=0;i<4;i++)
@@ -286,7 +286,7 @@ int main(int argc, char *argv[])
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
-    cout << "Calculando variaveis, tomando o sinal (+)" << endl;
+/*    cout << "Calculando variaveis, tomando o sinal (+)" << endl;
     for(int i=0;i<3;i++)
     {
 
@@ -295,7 +295,7 @@ int main(int argc, char *argv[])
 
     }
 
-
+*/
 //-------------------------------------------------------------------------------------------//
     system("PAUSE");
     return EXIT_SUCCESS;
