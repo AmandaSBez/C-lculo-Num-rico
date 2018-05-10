@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main(float argc, char *argv[])
+int main(int argc, char *argv[])
 {
     cout << "Metodo de Eliminacao de Gauss";
     cout << "\n";
@@ -212,7 +212,7 @@ int main(float argc, char *argv[])
 
 //-------------------------------------------------------------------------------------------//
 //-------------------------------------------------------------------------------------------//
-//--------------------------Definição da linha 4(1)------------------------------------------//
+//--------------------------Definição da linha 4(2)------------------------------------------//
 
     cout << "Linha L4(2)" <<endl;
     cout << "\n";
@@ -238,6 +238,45 @@ int main(float argc, char *argv[])
 //--------------------------Matriz Expandida A(2),b(2)---------------------------------------//
 
     cout << "A matriz expandida para o passso l=2 eh: "<< endl;
+    cout << "\n";
+
+    cout << matriz [0][0]<< "x1  "<< matriz [0][1]<< "x2  "<< matriz [0][2]<< "x3  "<< matriz [0][3]<< "x4  "<< "| " << matriz [0][4] << endl;
+    cout << matriz [1][0]<< "x1  "<< matriz [1][1]<< "x2  "<< matriz [1][2]<< "x3  "<< matriz [1][3]<< "x4  "<< "| " << matriz [1][4] << endl;
+    cout << matriz [2][0]<< "x1  "<< matriz [2][1]<< "x2  "<< matriz [2][2]<< "x3  "<< matriz [2][3]<< "x4  "<< "| " << matriz [2][4] << endl;
+    cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
+//-------------------------------------------------------------------------------------------//
+//--------------------------Definição dos Multiplicadores------------------------------------//
+    cout << "Definicoes dos multiplicadores (l=3)" <<endl;
+    cout << "\n";
+
+    cout << "Divisao  m433 = a43(2)/a33(2) = 1/7" <<endl;
+    float(m433) = float(matriz[3][2] /matriz[2][2]);
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m433) << endl;
+
+
+//-------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------//
+//--------------------------Definição da linha 4(2)------------------------------------------//
+
+    cout << "Linha L4(2)" <<endl;
+    cout << "\n";
+
+    float(a433)= matriz[3][2] - float(m433) * matriz [2][2];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a433) << endl;
+    matriz[3][2] = float(a433);
+
+    float(a443)= matriz[3][3] - float(m433) * matriz [2][3];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a443) << endl;
+    matriz[3][3] = float(a443);
+
+    float(b43)= matriz[3][4] - float(m433) * matriz [2][4];
+    cout <<setprecision(6)<< setiosflags(ios::fixed)<<float(b43) << endl;
+    matriz[3][4] = float(b43);
+
+//-------------------------------------------------------------------------------------------//
+//--------------------------Matriz Expandida A(3),b(3)---------------------------------------//
+
+    cout << "A matriz expandida para o passso l=3 eh: "<< endl;
     cout << "\n";
 
     cout << matriz [0][0]<< "x1  "<< matriz [0][1]<< "x2  "<< matriz [0][2]<< "x3  "<< matriz [0][3]<< "x4  "<< "| " << matriz [0][4] << endl;
