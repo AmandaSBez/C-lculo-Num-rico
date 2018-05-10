@@ -65,18 +65,18 @@ int main(int argc, char *argv[])
 
     cout << "Divisao  m211 = a21/a11(0) = 1/2" <<endl;
     float(m211) = (matriz[1][0] /matriz[0][0]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m211) << endl;
+    cout <<float(m211) << endl;
 
     // << matriz[2][0]<<endl;
     // << matriz[0][0]<<endl;
 
     cout << "Divisao  m311 = a31/a11(0) = 3/2" <<endl;
     float(m311) = (matriz[2][0] /matriz[0][0]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m311) << endl;
+    cout <<float(m311) << endl;
 
     cout << "Divisao  m411 = a41/a11(0) = 3/2" <<endl;
     float(m411) = (matriz[3][0] /matriz[0][0]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m411) << endl;
+    cout <<float(m411) << endl;
 
 //-------------------------------------------------------------------------------------------//
 //--------------------------Definição da linha 2(1)------------------------------------------//
@@ -88,23 +88,23 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a211)= matriz[1][0] - float(m211) * matriz [0][0];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a211) << endl;
+    cout <<float(a211) << endl;
     matriz[1][0] = float(a211);
 
     float(a221)= matriz[1][1] - float(m211) * matriz [0][1];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a221) << endl;
+    cout <<float(a221) << endl;
     matriz[1][1] = float(a221);
 
     float(a231)= matriz[1][2] - float(m211) * matriz [0][2];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a231) << endl;
+    cout <<float(a231) << endl;
     matriz[1][2] = float(a231);
 
     float(a241)= matriz[1][3] - float(m211) * matriz [0][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a241) << endl;
+    cout <<float(a241) << endl;
     matriz[1][3] = float(a241);
 
     float(b21)= matriz[1][4] - float(m211) * matriz [0][4];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b21) << endl;
+    cout <<float(b21) << endl;
     matriz[1][4] = float(b21);
 
 //-------------------------------------------------------------------------------------------//
@@ -114,19 +114,19 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a311)= matriz[2][0] - float(m311) * matriz [0][0];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a311) << endl;
+    cout <<float(a311) << endl;
     matriz[2][0] = float(a311);
 
     float(a321)= matriz[2][1] - float(m311) * matriz [0][1];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a321) << endl;
+    cout <<float(a321) << endl;
     matriz[2][1] = float(a321);
 
     float(a331)= matriz[2][2] - float(m311) * matriz [0][2];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a331) << endl;
+    cout <<float(a331) << endl;
     matriz[2][2] = float(a331);
 
     float(a341)= matriz[2][3] - float(m311) * matriz [0][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a341) << endl;
+    cout <<float(a341) << endl;
     matriz[2][3] = float(a341);
 
     float(b31)= matriz[2][4] - float(m311) * matriz [0][4];
@@ -141,24 +141,24 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a411)= matriz[3][0] - float(m411) * matriz [0][0];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a411) << endl;
+    cout <<float(a411) << endl;
     matriz[3][0] = float(a411);
 
 
     float(a421)= matriz[3][1] - float(m411) * matriz [0][1];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a421) << endl;
+    cout <<float(a421) << endl;
     matriz[3][1] = float(a421);
 
     float(a431)= matriz[3][2] - float(m411) * matriz [0][2];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a431) << endl;
+    cout <<float(a431) << endl;
     matriz[3][2] = float(a431);
 
     float(a441)= matriz[3][3] - float(m411) * matriz [0][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a441) << endl;
+    cout <<float(a441) << endl;
     matriz[3][3] = float(a441);
 
     float(b41)= matriz[3][4] - float(m411) * matriz [0][4];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b41) << endl;
+    cout <<float(b41) << endl;
     matriz[3][4] = float(b41);
 
 //-------------------------------------------------------------------------------------------//
@@ -179,11 +179,11 @@ int main(int argc, char *argv[])
 
     cout << "Divisao  m322 = a32(1)/a22(1) = 1/2" <<endl;
     float(m322) = (matriz[2][1] /matriz[1][1]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m322) << endl;
+    cout <<float(m322) << endl;
 
     cout << "Divisao  m422 = a42(1)/a22(1) = -1/2" <<endl;
     float(m422) = (matriz[3][1] /matriz[1][1]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m422) << endl;
+    cout <<float(m422) << endl;
 
 //-------------------------------------------------------------------------------------------//
 //--------------------------Definição da linha 3(2)------------------------------------------//
@@ -195,19 +195,19 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a322)= matriz[2][1] - float(m322) * matriz [1][1];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a322) << endl;
+    cout <<float(a322) << endl;
     matriz[2][1] = float(a322);
 
     float(a332)= matriz[2][2] - float(m322) * matriz [1][2];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a332) << endl;
+    cout <<float(a332) << endl;
     matriz[2][2] = float(a332);
 
     float(a342)= matriz[2][3] - float(m322) * matriz [1][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a342) << endl;
+    cout <<float(a342) << endl;
     matriz[2][3] = float(a342);
 
     float(b32)= matriz[2][4] - float(m322) * matriz [1][4];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b32) << endl;
+    cout <<float(b32) << endl;
     matriz[2][4] = float(b32);
 
 //-------------------------------------------------------------------------------------------//
@@ -218,20 +218,19 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a422)= matriz[3][1] - float(m422) * matriz [1][1];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a422) << endl;
+    cout <<float(a422) << endl;
     matriz[3][1] = float(a422);
 
     float(a432)= matriz[3][2] - float(m422) * matriz [1][2];
-    cout << "debug" << matriz[3][2] << "debug" << matriz[1][2] << endl;
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a432) << endl;
+    cout << float(a432) << endl;
     matriz[3][2] = float(a432);
 
     float(a442)= matriz[3][3] - float(m422) * matriz [1][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a442) << endl;
+    cout <<float(a442) << endl;
     matriz[3][3] = float(a442);
 
     float(b42)= matriz[3][4] - float(m422) * matriz [1][4];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b42) << endl;
+    cout <<float(b42) << endl;
     matriz[3][4] = float(b42);
 
 //-------------------------------------------------------------------------------------------//
@@ -251,7 +250,7 @@ int main(int argc, char *argv[])
 
     cout << "Divisao  m433 = a43(2)/a33(2) = 1/7" <<endl;
     float(m433) = float(matriz[3][2] /matriz[2][2]);
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m433) << endl;
+    cout << float(m433) << endl;
 
 
 //-------------------------------------------------------------------------------------------//
@@ -262,15 +261,15 @@ int main(int argc, char *argv[])
     cout << "\n";
 
     float(a433)= matriz[3][2] - float(m433) * matriz [2][2];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a433) << endl;
+    cout << float(a433) << endl;
     matriz[3][2] = float(a433);
 
     float(a443)= matriz[3][3] - float(m433) * matriz [2][3];
-    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a443) << endl;
+    cout << float(a443) << endl;
     matriz[3][3] = float(a443);
 
     float(b43)= matriz[3][4] - float(m433) * matriz [2][4];
-    cout <<setprecision(6)<< setiosflags(ios::fixed)<<float(b43) << endl;
+    cout << float(b43) << endl;
     matriz[3][4] = float(b43);
 
 //-------------------------------------------------------------------------------------------//
