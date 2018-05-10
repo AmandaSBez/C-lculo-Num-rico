@@ -11,6 +11,7 @@ int main(float argc, char *argv[])
     cout << "\n";
 
     float matriz[4][5];
+    float sx[3];
 
     cout << "Quem eh o elemento a11,a12,a13,a14,b1 : " << endl;
     for(int i=0;i<5;i++)
@@ -222,7 +223,7 @@ int main(float argc, char *argv[])
     matriz[3][4] = float(b42);
 
 //-------------------------------------------------------------------------------------------//
-//--------------------------Matriz Expandida A(1),b(1)---------------------------------------//
+//--------------------------Matriz Expandida A(2),b(2)---------------------------------------//
 
     cout << "A matriz expandida para o passso l=2 eh: "<< endl;
     cout << "\n";
