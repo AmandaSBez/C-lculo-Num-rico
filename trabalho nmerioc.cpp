@@ -159,7 +159,79 @@ int main(float argc, char *argv[])
     cout << matriz [2][0]<< "x1  "<< matriz [2][1]<< "x2  "<< matriz [2][2]<< "x3  "<< matriz [2][3]<< "x4  "<< "| " << matriz [2][4] << endl;
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------//
+//--------------------------Definição dos Multiplicadores------------------------------------//
+    cout << "Definicoes dos multiplicadores (l=2)" <<endl;
+    cout << "\n";
 
+    cout << "Divisao  m322 = a32(1)/a22(1) = 1/2" <<endl;
+    float(m322) = (matriz[2][1] /matriz[1][1]);
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m322) << endl;
+
+    cout << "Divisao  m422 = a42(1)/a22(1) = -1/2" <<endl;
+    float(m422) = (matriz[3][1] /matriz[1][1]);
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(m422) << endl;
+
+//-------------------------------------------------------------------------------------------//
+//--------------------------Definição da linha 3(2)------------------------------------------//
+
+    cout << "Definicoes das linhas (l=2)" <<endl;
+    cout << "\n";
+
+    cout << "Linha L3(2)" <<endl;
+    cout << "\n";
+
+    float(a322)= matriz[2][1] - float(m322) * matriz [1][1];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a322) << endl;
+    matriz[2][1] = float(a322);
+
+    float(a332)= matriz[2][2] - float(m322) * matriz [1][2];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a332) << endl;
+    matriz[2][2] = float(a332);
+
+    float(a342)= matriz[2][3] - float(m322) * matriz [1][3];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a342) << endl;
+    matriz[2][3] = float(a342);
+
+    float(b32)= matriz[2][4] - float(m322) * matriz [1][4];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b32) << endl;
+    matriz[2][4] = float(b32);
+
+//-------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------//
+//--------------------------Definição da linha 4(1)------------------------------------------//
+
+    cout << "Linha L4(2)" <<endl;
+    cout << "\n";
+
+    float(a422)= matriz[3][1] - float(m422) * matriz [1][1];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a422) << endl;
+    matriz[3][1] = float(a422);
+
+    float(a432)= matriz[3][2] - float(m422) * matriz [1][2];
+    cout << "debug" << matriz[3][2] << "debug" << matriz[1][2] << endl;
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a432) << endl;
+    matriz[3][2] = float(a432);
+
+    float(a442)= matriz[3][3] - float(m422) * matriz [1][3];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(a442) << endl;
+    matriz[3][3] = float(a442);
+
+    float(b42)= matriz[3][4] - float(m422) * matriz [1][4];
+    cout <<setprecision(4)<< setiosflags(ios::fixed)<<float(b42) << endl;
+    matriz[3][4] = float(b42);
+
+//-------------------------------------------------------------------------------------------//
+//--------------------------Matriz Expandida A(1),b(1)---------------------------------------//
+
+    cout << "A matriz expandida para o passso l=2 eh: "<< endl;
+    cout << "\n";
+
+    cout << matriz [0][0]<< "x1  "<< matriz [0][1]<< "x2  "<< matriz [0][2]<< "x3  "<< matriz [0][3]<< "x4  "<< "| " << matriz [0][4] << endl;
+    cout << matriz [1][0]<< "x1  "<< matriz [1][1]<< "x2  "<< matriz [1][2]<< "x3  "<< matriz [1][3]<< "x4  "<< "| " << matriz [1][4] << endl;
+    cout << matriz [2][0]<< "x1  "<< matriz [2][1]<< "x2  "<< matriz [2][2]<< "x3  "<< matriz [2][3]<< "x4  "<< "| " << matriz [2][4] << endl;
+    cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
+//-------------------------------------------------------------------------------------------//
 
     system("PAUSE");
     return EXIT_SUCCESS;
