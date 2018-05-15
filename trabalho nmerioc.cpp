@@ -286,7 +286,7 @@ int main(int argc, char *argv[])
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
-    cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
+/*    cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
     for(int j=0;j<2;j++)
     {
         for(int i=0;i<3;i++)
@@ -301,7 +301,7 @@ int main(int argc, char *argv[])
         }
     }
 
-
+*/
 
 //-------------------------------------------------------------------------------------------//
     system("PAUSE");
