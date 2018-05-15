@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     for(int i=0; i<4;i++)
     {
             cout << "Sx = ";
-            cout << sx[i] << endl;
+            cout << sx[0][i] << endl;
     }
 
     cout << "Quem eh o elemento a11,a12,a13,a14,b1 : " << endl;
@@ -286,14 +286,20 @@ int main(int argc, char *argv[])
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
-    cout << "Calculando variaveis, tomando o sinal (+)" << endl;
-    for(int i=0;i<3;i++)
+    cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
+    for(int j=1;j<2;j++)
     {
-
-        sx[i+1][i] = sx[0][i]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[i][1])+(matriz[0][2]*sx[i][2])+(matriz[i][3]*sx[i][3])));
-        cout << sx[i] << endl <<endl;
-
+        for(int i=0;i<3;i++)
+        {
+            cout << "i==" << i << endl;
+            cout << "j==" << j << endl;
+            cout << matriz[0][0] << "a11(o)" << matriz [0][4] << "b1(0)" << matriz [0][1] << "a12(0)" << matriz[0][2] << "a13(0)" << matriz [0][3] << endl <<endl;
+            cout << sx[i][0] << "x1(0)" << sx[i][1] <<"x2(0)" << sx[i][2] << "x3(o)"<< sx[i][3] << "x4(0)" << endl <<endl;
+            sx[j][i] = sx[i][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[i][1])+(matriz[0][2]*sx[i][2])+(matriz[i][3]*sx[i][3])));
+            cout << sx[1][0] << "x1(1)" << sx[1][1] << "x2(1)" << sx[1][2] << "x3(1)" << sx[1][3] << "x4(1)"<< endl <<endl;
+        }
     }
+
 
 
 //-------------------------------------------------------------------------------------------//
