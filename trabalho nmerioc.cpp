@@ -286,16 +286,16 @@ int main(int argc, char *argv[])
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
-/*    cout << "Calculando variaveis, tomando o sinal (+)" << endl;
+    cout << "Calculando variaveis, tomando o sinal (+)" << endl;
     for(int i=0;i<3;i++)
     {
 
-        sx[i+1] = sx[0][i]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[i][1])+(matriz[0][2]*sx[i][2])+(matriz[i][3]*sx[i][3])));
+        sx[i+1][i] = sx[0][i]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[i][1])+(matriz[0][2]*sx[i][2])+(matriz[i][3]*sx[i][3])));
         cout << sx[i] << endl <<endl;
 
     }
 
-*/
+
 //-------------------------------------------------------------------------------------------//
     system("PAUSE");
     return EXIT_SUCCESS;
