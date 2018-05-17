@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
 
     int NITMAX = 1000;
     float matriz[4][5];
-    float sx[1000][3];
+    float sx[2][4];
+    float ite[1000][3];
 
     cout << "Qual o primeiro conjunto de solucoes (4 numeros ) : " << endl;
     for(int i=0;i<4;i++)
@@ -286,22 +287,24 @@ int main(int argc, char *argv[])
     cout << matriz [3][0]<< "x1  "<< matriz [3][1]<< "x2  "<< matriz [3][2]<< "x3  "<< matriz [3][3]<< "x4  "<< "| " << matriz [3][4] << endl;
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
-/*    cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
+    cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
     for(int j=0;j<2;j++)
     {
-        for(int i=0;i<3;i++)
-        {
-            cout << "i==" << i << endl;
             cout << "j==" << j << endl;
-            cout << matriz[0][0] << "a11(o)" << matriz [0][4] << "b1(0)" << matriz [0][1] << "a12(0)" << matriz[0][2] << "a13(0)" << matriz [0][3] << endl <<endl;
-            cout << sx[j][0] << "x1(0)" << sx[j][1] <<"x2(0)" << sx[j][2] << "x3(o)"<< sx[j][3] << "x4(0)" << endl <<endl;
-            sx[j+1][i] = sx[j][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[j][1])+(matriz[0][2]*sx[j][2])+(matriz[0][3]*sx[j][3])));
-            cout << "sx [j+1][i] == " <<  sx[j+1][i] << endl;
-            cout << "sx [j][i] == " <<  sx[j][3] << endl;
-        }
+            ite[j][0] = sx[j][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[j][1])+(matriz[0][2]*sx[j][2])+(matriz[0][3]*sx[j][3])));
+            ite[j][1] = sx[j][1]+ (1/matriz[1][1])*(matriz[1][4]-((matriz[1][2]*sx[j][2])+(matriz[1][3]*sx[j][3])));
+            ite[j][2] = sx[j][2]+ (1/matriz[2][2])*(matriz[2][4]-(matriz[2][3]*sx[j][3]));
+            ite[j][3] = sx[j][3]+ (1/matriz[3][3])*(matriz[3][4]);
+            cout << "ite [j][0] == " <<  ite[j][0] << endl;
+            cout << "ite [j][1] == " <<  ite[j][1] << endl;
+            cout << "ite [j][2] == " <<  ite[j][2] << endl;
+            cout << "ite [j][3] == " <<  ite[j][3] << endl;
+            cout << "sx [0][0] == " <<  sx[0][0] << endl;
+            cout << "sx [0][1] == " <<  sx[0][1] << endl;
+            cout << "sx [0][2] == " <<  sx[0][2] << endl;
+            cout << "sx [0][3] == " <<  sx[0][3] << endl;
     }
 
-*/
 
 //-------------------------------------------------------------------------------------------//
     system("PAUSE");
