@@ -288,7 +288,7 @@ int main(int argc, char *argv[])
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
     cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
-    for(int j=0;j<3;j++)
+    for(int j=0;j<11;j++)
     {
             cout << "j==" << j << endl;
             ite[j][0] = sx[j][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[j][1])+(matriz[0][2]*sx[j][2])+(matriz[0][3]*sx[j][3])));
@@ -299,18 +299,18 @@ int main(int argc, char *argv[])
             sx[j+1][1] = ite[j][1];
             sx[j+1][2] = ite[j][2];
             sx[j+1][3] = ite[j][3];
-            cout << "ite [j][0] == " <<  ite[j][0] << endl;
-            cout << "ite [j][1] == " <<  ite[j][1] << endl;
-            cout << "ite [j][2] == " <<  ite[j][2] << endl;
-            cout << "ite [j][3] == " <<  ite[j][3] << endl;
-            cout << "ite [j+1][0] == " <<  ite[j+1][0] << endl;
-            cout << "ite [j+1][1] == " <<  ite[j+1][1] << endl;
-            cout << "ite [j+1][2] == " <<  ite[j+1][2] << endl;
-            cout << "ite [j+1][3] == " <<  ite[j+1][3] << endl;
-            cout << "sx [0][0] == " <<  sx[0][0] << endl;
-            cout << "sx [0][1] == " <<  sx[0][1] << endl;
-            cout << "sx [0][2] == " <<  sx[0][2] << endl;
-            cout << "sx [0][3] == " <<  sx[0][3] << endl;
+            cout << "sx [j][0] == " <<  ite[j][0] << endl;
+            cout << "sx [j][1] == " <<  ite[j][1] << endl;
+            cout << "sx [j][2] == " <<  ite[j][2] << endl;
+            cout << "sx [j][3] == " <<  ite[j][3] << endl;
+//          cout << "ite [j+1][0] == " <<  ite[j+1][0] << endl;
+ //         cout << "ite [j+1][1] == " <<  ite[j+1][1] << endl;
+//          cout << "ite [j+1][2] == " <<  ite[j+1][2] << endl;
+//          cout << "ite [j+1][3] == " <<  ite[j+1][3] << endl;
+//          cout << "sx [0][0] == " <<  sx[0][0] << endl;
+//          cout << "sx [0][1] == " <<  sx[0][1] << endl;
+//          cout << "sx [0][2] == " <<  sx[0][2] << endl;
+ //         cout << "sx [0][3] == " <<  sx[0][3] << endl;
     }
 
 
