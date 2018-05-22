@@ -71,15 +71,9 @@ int main(int argc, char *argv[])
     cout << "Definicoes dos multiplicadores (l=1)" <<endl;
     cout << "\n";
 
-    //cout << matriz[1][0]<<endl;
-    //cout << matriz[0][0]<<endl;
-
     cout << "Divisao  m211 = a21/a11(0) = 1/2" <<endl;
     float(m211) = (matriz[1][0] /matriz[0][0]);
     cout <<float(m211) << endl;
-
-    // << matriz[2][0]<<endl;
-    // << matriz[0][0]<<endl;
 
     cout << "Divisao  m311 = a31/a11(0) = 3/2" <<endl;
     float(m311) = (matriz[2][0] /matriz[0][0]);
@@ -311,14 +305,7 @@ int main(int argc, char *argv[])
             cout << "sx [j][1] == " <<  ite[j][1] << endl;
             cout << "sx [j][2] == " <<  ite[j][2] << endl;
             cout << "sx [j][3] == " <<  ite[j][3] << endl;
-//          cout << "ite [j+1][0] == " <<  ite[j+1][0] << endl;
- //         cout << "ite [j+1][1] == " <<  ite[j+1][1] << endl;
-//          cout << "ite [j+1][2] == " <<  ite[j+1][2] << endl;
-//          cout << "ite [j+1][3] == " <<  ite[j+1][3] << endl;
-//          cout << "sx [0][0] == " <<  sx[0][0] << endl;
-//          cout << "sx [0][1] == " <<  sx[0][1] << endl;
-//          cout << "sx [0][2] == " <<  sx[0][2] << endl;
- //         cout << "sx [0][3] == " <<  sx[0][3] << endl;
+
     }
 
 
