@@ -16,6 +16,14 @@ int main(int argc, char *argv[])
     float sx[1000][4];
     float ite[1000][3];
 
+    for(int linha=0;linha<4;linha++)
+    {
+        for(int coluna=0;coluna<5;coluna++)
+        {
+            matriz[linha][coluna] = 0;
+        }
+    }
+
     cout << "Qual o primeiro conjunto de solucoes (4 numeros ) : " << endl;
     for(int i=0;i<4;i++)
     {
@@ -288,7 +296,7 @@ int main(int argc, char *argv[])
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
     cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
-    for(int j=0;j<10;j++)
+    for(int j=0;j<11;j++)
     {
             cout << "j==" << j << endl;
             ite[j][0] = sx[j][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[j][1])+(matriz[0][2]*sx[j][2])+(matriz[0][3]*sx[j][3])));
