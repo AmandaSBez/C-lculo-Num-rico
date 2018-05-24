@@ -71,15 +71,15 @@ int main(int argc, char *argv[])
     cout << "Definicoes dos multiplicadores (l=1)" <<endl;
     cout << "\n";
 
-    cout << "Divisao  m211 = a21/a11(0) = 1/2" <<endl;
+    cout << "Divisao  m211 = a21/a11(0)" <<endl;
     float(m211) = (matriz[1][0] /matriz[0][0]);
     cout <<float(m211) << endl;
 
-    cout << "Divisao  m311 = a31/a11(0) = 3/2" <<endl;
+    cout << "Divisao  m311 = a31/a11(0" <<endl;
     float(m311) = (matriz[2][0] /matriz[0][0]);
     cout <<float(m311) << endl;
 
-    cout << "Divisao  m411 = a41/a11(0) = 3/2" <<endl;
+    cout << "Divisao  m411 = a41/a11(0)" <<endl;
     float(m411) = (matriz[3][0] /matriz[0][0]);
     cout <<float(m411) << endl;
 
@@ -278,7 +278,7 @@ int main(int argc, char *argv[])
     matriz[3][4] = float(b43);
 
 //-------------------------------------------------------------------------------------------//
-//--------------------------Matriz Expandida A(3),b(3)---------------------------------------//
+//--------------------------Matriz Expandida A(3),B(3)---------------------------------------//
 
     cout << "A matriz expandida para o passso l=3 eh: "<< endl;
     cout << "\n";
@@ -290,7 +290,7 @@ int main(int argc, char *argv[])
 //-------------------------------------------------------------------------------------------//
 //--------------------------Integracao Computacional-----------------------------------------//
     cout << "Calculando variaveis, tomando o sinal (+)" << endl << endl;
-    for(int j=0;j<11;j++)
+    for(int j=0;j<10;j++)
     {
             cout << "j==" << j << endl;
             ite[j][0] = sx[j][0]+ (1/matriz[0][0])*(matriz[0][4]-((matriz[0][1]*sx[j][1])+(matriz[0][2]*sx[j][2])+(matriz[0][3]*sx[j][3])));
